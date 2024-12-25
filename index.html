@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Gifts Special Offer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #FF5733;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 500px;
+            margin: 50px auto;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        .offer {
+            font-size: 20px;
+            color: #FF5733;
+            margin-top: 20px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .celebration {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .celebration img {
+            width: 50px;
+            margin: 0 10px;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Snow effect */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 999;
+            color: #fff;
+            font-size: 1.2rem;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Smoke effect */
+       
+    </style>
+</head>
+<body>
+
+    <h1>🎄 Christmas Gifts Special Offer 🎄</h1>
+
+    <div class="container">
+        <p>Celebrate the season with <strong>special Christmas gifts!</strong> 🎁</p>
+
+        <img src="https://flashoot.com/wp-content/uploads/2024/02/Flashsoot_Logo-1024x422.png" alt="Christmas Gifts"> <!-- Updated with shadow effect -->
+
+        <p class="offer">Download our app, share with your friends, and get <strong>₹120 Swiggy Cashback Coupons!</strong></p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.flashoot.user" class="btn" target="_blank">Download App</a>
+
+    </div>
+
+    <!-- Snowflakes -->
+    <script>
+        const createSnowflake = () => {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = '❄️';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        };
+
+        setInterval(createSnowflake, 100);
+    </script>
+
+</body>
+</html>
